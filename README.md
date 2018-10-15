@@ -49,7 +49,6 @@ with open(r'E:\\爬虫数据分析\调用百度地图api\各区域房价.csv', '
         file.write(str_temp) #写入文档
 file.close() #保存
 在这里特别要注意str_temp = '{"lat":' + str(lat) + ',"lng":' + str(lng) + ',"count":' + str(c) +'},'，这一行的命令，这是参照百度地图JavaScript API热力图制作的相应格式而生成的，生成的json数据格式为：{"lat":39.92998577808024,"lng":116.39564503787867,"count":124.7},如下图所示，来自于网址：http://developer.baidu.com/map/jsdemo.htm#c1_15。
-Paste_Image.png
 
 （5）生成热力地图
 接下来就比较简单，我们先建立一个html文件，将http://lbsyun.baidu.com/jsdemo.htm#c1_15
